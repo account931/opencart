@@ -3,15 +3,20 @@ Login: admin/admin
 
 http://localhost/opencart/ocStore-2.1.0.1.1/upload/  shop
 =================================================================================
-Remove OCart logo image->
+1.Remove OCart logo image->
 localhost\opencart\ocStore-2.1.0.1.1\upload\catalog\view\theme\default\template\common-> comment $logo
 
-Remove Powered by OCart->
+2.Remove Powered by OCart->
 localhost\opencart\ocStore-2.1.0.1.1\upload\catalog\language\russian\commom\footer
 =============================================================================
 
-Remove in cart shipping, voucher......
+3.To romove shipping only
+\system\library\cart.php
+
+
+4.Remove in cart shipping, voucher, $coupon, $reward......
 \catalog\view\theme\default\template\checkout\cart.tpl
+
 
 
 
@@ -19,7 +24,16 @@ Remove shipping
 https://allwebstuff.info/opencart-%D1%83%D0%B1%D0%B8%D1%80%D0%B0%D0%B5%D0%BC-%D1%88%D0%B0%D0%B3%D0%B8-%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D1%8B-%D0%B8-%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8-%D0%B2-%D0%BE%D1%84%D0%BE/
 
 
+5.Оключить пункт «Я прочитал и принимаю Условия соглашения» при оформлении в заказа->
+Система - Настройки - Вкладка Опции - Раздел ЗАРЕГИСТРИРОВАННЫЕ ПОКУПАТЕЛИ - Подтверждение при оформлении
 
+
+6.Отключить налоги -> Настройки-магазин-опции
+
+7. Информация о доставке, О нас, Политика Безопасности, Условия соглашения -> Каталог-Статьи
+
+
+=================================================================================================================
 
 
 
